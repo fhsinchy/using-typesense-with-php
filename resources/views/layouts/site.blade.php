@@ -6,10 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Typesense Demo</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    @livewireStyles
 </head>
 <body>
-    {{ $slot }}
-    @livewireScripts
+    @yield('content')
 </body>
 </html>

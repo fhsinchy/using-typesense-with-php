@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Livewire\Books;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SearchController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,4 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', Books::class);
+Route::get('/', SearchController::class)->name('search');
