@@ -10,7 +10,10 @@
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.65",
         "laravel/sanctum": "^2.11",
-        "laravel/tinker": "^2.5"
+        "laravel/tinker": "^2.5",
+        "livewire/livewire": "^2.7",
+        "php-http/curl-client": "^2.2",
+        "typesense/typesense-php": "^4.7"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
