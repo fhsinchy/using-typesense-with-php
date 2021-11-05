@@ -17,12 +17,12 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind(Client::class, function() {
             return new Client(
                 [
-                  'api_key'         => 'vaqcyr27eJ',
+                  'api_key'         => config('typesense.key'),
                   'nodes'           => [
                     [
-                      'host'     => 'localhost',
-                      'port'     => '8108',
-                      'protocol' => 'http',
+                      'host'     => config('typesense.host'),
+                      'port'     => config('typesense.port'),
+                      'protocol' => config('typesense.protocol'),
                     ],
                   ],
                   'connection_timeout_seconds' => 2,
