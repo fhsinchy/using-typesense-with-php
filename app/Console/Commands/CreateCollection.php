@@ -47,7 +47,7 @@ class CreateCollection extends Command
                 $client->collections->create(include_once($base . '/' . $schema));
             }
 
-            $this->info('Schemas created successfully.');
+            $this->info('Collections created successfully.');
         } catch (\Throwable $th) {
             $this->error($th->getMessage());
         }
